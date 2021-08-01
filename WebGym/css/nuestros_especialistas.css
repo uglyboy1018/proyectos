@@ -47,3 +47,53 @@
     width: 120px;
     cursor: pointer;
 }
+
+.menu-icons{
+    flex: 1;
+    align-items: center;
+    background: red;
+    text-align: right;
+}
+
+.menu-icons img {
+    width: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.content{
+    width: 60%;
+    background: blue;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 60px;
+
+}
+
+.content h3{
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 200; /*Grosor del trazo (negrita): */
+    line-height: 25px; /*permite establecer el interlineado de un bloque de texto*/
+    /* background: red; */
+}
+
+button{
+    width: 200px;
+    padding: 15px 0; /*es el espacio transparente situado entre el elemento y el borde*/
+    text-align: center;
+    margin: 0 10px;
+    /*
+    1 valor: este valor se aplica a los cuatro lados
+    2 valores: el primer valor se aplica a los lados inferior y superior y el segundo a los lados derecho e izquierdo
+    3 valores: el primer valor se aplica al lado superior, el segundo a los lados derecho e izquierdo y el tercer valor al lado inferior
+    4 valores: el primer valor se aplica al lado superior, el segundo al lado derecho, el tercer valor al lado inferior y el cuarto al lado izquierdo
+    */
+    background: red;
+
+
+}
