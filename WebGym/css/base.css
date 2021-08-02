@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url(../img/nuestros_especialistas/portada_ne.jpg);
+    background-size: cover;
+    /* permite establecer el tamaño de la imagen de fondo
+    
+    auto: el primer valor corresponde al tamaño horizontal y el segundo al tamaño vertical, se conserva el tamaño original de la imagen.
+    valores numéricos (porcentajes o distancias): el primer valor corresponde al tamaño horizontal y el segundo al tamaño vertical, la imagen se deforma para ajustarse a esos valores.
+    contain: la imagen se aumenta o disminuye de manera que pueda verse completa en una de las dimensiones (horizontal o vertical) y se repita en la otra dimensión.
+    cover: la imagen se aumenta o disminuye de manera que ocupe todo el espacio disponible en una dimensión (horizontal o vertical) y se corta en la otra dimensión. */
+    background-position: center;
+    /* La propiedad background-position permite establecer la posición de la imagen de fondo. A esta propiedad hay que darle dos valores: la posición horizontal y la posición vertical.
+
+    Los posibles valores de background-position son:
+
+    valores numéricos (porcentajes o distancias)
+    left, center y right: establecen la posición horizontal (izquierda, centro y derecha, respectivamente)
+    top, center, bottom: establece la posición vertical (arriba, en medio, abajo, respectivamente) */
+
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    /* display permite definir el tipo de contenedor flexible:
+    flex: el contenedor se comporta como un bloque, es decir, ocupa todo el espacio horizontal disponible  */
+
+    align-items: center;
+    /* align-items establece la forma en que se alinean los elementos en la dirección secundaria.
+    los elementos se sitúan en el centro de la dirección secundaria */
+    justify-content: space-between;
+    /* justify-content establece la forma en que se reparte el espacio libre disponible en la dirección principal. */
+    /* space-between:el espacio disponible se reparte entre los elementos */
+    
+}
+
+.logo{
+    width: 170px;
+    cursor: pointer;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    
+    display: inline-block;
+    /* display permite especificar el tipo de caja que se aplica en un elemento */
+    /* none: hace que no se genere caja
+    block: caja rectangular que forma un bloque
+    inline: caja en-línea que puede ocupar varias líneas y está incluida en una caja de tipo block
+    inline-block: caja en-línea, pero que se formatea como una caja de tipo block
+    run-in: caja de tipo inline, pero que se añade al principio del elemento siguiente
+    list-item: caja de tipo block pero que también incluye un marcador */
+    margin: 0 20px;
+    position: relative;
+    /* background: red; */
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ffc107;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    /* transition:Permite definir la transición entre dos estados de un elemento */
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+/*content*/
+
+.content{
+    
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    /* transform te permite modificar el espacio de coordenadas del modelo de formato visual CSS */
+    text-align: center;
+    color: #fff;
+}
+
+.title{
+    font-size: 70px;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.content p{
+    background: red;
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    /* line-height se utiliza para especificar el interlineado de un bloque de texto */
+    font-family: sans-serif;
+}
+
+button{
+    padding: 15px 25px;
+    /*del elemento central(texto) espaciado arriba y abajo 15px
+    a la izquierda y derecha 25px con el elemento contenedor button*/
+    margin: 20px;
+}

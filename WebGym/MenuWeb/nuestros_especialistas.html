@@ -8,10 +8,10 @@
     <link rel="stylesheet" type="text/css" href="../css/nuestros_especialistas.css">
     
 </head>
-<body>
+<body onload="slider()">
     <div class="banner">
         <div class="slider">
-            <img src="../img/nuestros_especialistas/portada_ne.jpg" id="slideImg">
+            <img src="../img/nuestros_especialistas/portada_ne_1.jpg" id="slideImg">
         </div>
         <div class="overlay">
             <div class="navbar">
@@ -32,12 +32,35 @@
 
                 <div>
                     <button type="button">Ver mas</button>
-                    <button type="button">Suscribirse</button>
+                    <button type="button" class="btn-2">Suscribirse</button>
                 </div>
             </div>
         </div>
     </div>
-      
+    
+    <script>
+        var slideImg = document.getElementById("slideImg");
+        var images = new Array(
+            "../img/nuestros_especialistas/portada_ne_1.jpg",
+            "../img/nuestros_especialistas/portada_ne_2.jpg",
+            "../img/nuestros_especialistas/portada_ne_3.jpg",
+            "../img/nuestros_especialistas/portada_ne_4.jpg"
+        );
+        
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            while(i > len - 1){
+                i = 0;
+
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+        
+    </script>
       
 </body>
 </html>
