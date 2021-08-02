@@ -105,10 +105,35 @@
     font-size: 70px;
     line-height: 100px;
     font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
+.slider{
+    color: #ffc107;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+    /* background: red; */
+}
+
+@keyframes slider{
+    0%{margin-top: -400px;}
+    5%{margin-top: -200px;}
+    30%{margin-top: -200px;}
+    35%{margin-top: 0px;}
+    65%{margin-top: 0px;}
+    70%{margin-top: 200px;}
+    100%{margin-top: 200px;}
+}
+
+
 .content p{
-    background: red;
+    
     margin: 20px;
     font-weight: 100;
     line-height: 25px;
@@ -121,4 +146,22 @@ button{
     /*del elemento central(texto) espaciado arriba y abajo 15px
     a la izquierda y derecha 25px con el elemento contenedor button*/
     margin: 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid #ffc107;
+    color: #fff;
+    cursor: pointer;
+    
+    background: linear-gradient(to right, transparent 50%, #ffc107 50%);
+    background-size: 200%;
+    /*------*/
+    background-position: left;
+    transition: background-position 0.5s;
 }
+
+button:hover{
+    background-position: right;
+    color: #000;
+    /*-----*/
+}
+
