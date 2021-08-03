@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
 }
+
+/*Cabecera*/
 
 .banner{
     width: 100%;
@@ -15,6 +19,7 @@
     contain: la imagen se aumenta o disminuye de manera que pueda verse completa en una de las dimensiones (horizontal o vertical) y se repita en la otra dimensión.
     cover: la imagen se aumenta o disminuye de manera que ocupe todo el espacio disponible en una dimensión (horizontal o vertical) y se corta en la otra dimensión. */
     background-position: center;
+    
     /* La propiedad background-position permite establecer la posición de la imagen de fondo. A esta propiedad hay que darle dos valores: la posición horizontal y la posición vertical.
 
     Los posibles valores de background-position son:
@@ -22,6 +27,7 @@
     valores numéricos (porcentajes o distancias)
     left, center y right: establecen la posición horizontal (izquierda, centro y derecha, respectivamente)
     top, center, bottom: establece la posición vertical (arriba, en medio, abajo, respectivamente) */
+    
 
 }
 
@@ -99,6 +105,8 @@
     /* transform te permite modificar el espacio de coordenadas del modelo de formato visual CSS */
     text-align: center;
     color: #fff;
+    background: red;
+    
 }
 
 .title{
@@ -147,6 +155,7 @@ button{
     a la izquierda y derecha 25px con el elemento contenedor button*/
     margin: 20px;
     font-size: 16px;
+    
     letter-spacing: 1px;
     border: 2px solid #ffc107;
     color: #fff;
@@ -164,4 +173,98 @@ button:hover{
     color: #000;
     /*-----*/
 }
+
+/*End Cabecera*/
+
+
+
+/*Footer*/
+/* body{
+    background: #eef8ff;
+    
+} */
+
+.container_1{
+    width: 100%;
+    /* background: green; */
+    margin-top: 200px;
+}
+
+
+ footer{
+    width: 100%;
+    position: absolute;
+    /* bottom: 0; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height:20px;
+
+    margin: auto;
+
+} 
+
+.row{
+    width: 85%;
+    
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-wrap:establece si los elementos se colocan en una sola línea o en varias
+    no-wrap: los elementos se colocan en una sola línea.
+    wrap: los elementos se colocan en varias líneas si no caben en una sola línea. 
+    wrap-reverse: los elementos se colocan en varias líneas si no caben en una sola línea, pero las líneas se muestran de abajo arriba.  */
+
+    align-items: flex-start;
+    /* align-items establece la forma en que se alinean los elementos en la dirección secundaria */
+    justify-content:space-between;
+    /* justify-content establece la forma en que se reparte el espacio libre disponible en la dirección principal.
+    flex-start: los elementos se sitúan al principio de la dirección principal, es decir, el espacio disponible se sitúa al final
+    flex-end: los elementos se sitúan al final de la dirección principal, es decir, el espacio disponible se sitúa al principio. 
+    center: los elementos se sitúan en el centro de la dirección principal, es decir, el espacio disponible se reparte entre el principio y el final. 
+    space-between: el espacio disponible se reparte entre los elementos.  */
+    
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    
+}
+
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+
+}
+
+.col h3{
+    width: fit-content;
+    /*-----*/
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*End Footer*/
 
